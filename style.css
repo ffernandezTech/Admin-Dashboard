@@ -133,6 +133,51 @@ input[type='text'] {
      font-weight: bold;
 }
 
+/* FOR OUR MAIN CONTENT AREA */
+.main-content{
+    display: grid;
+
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/* creating a outline for my content items */
+.deck-sec, .announcement-sec,.trending-sec{
+
+border: dotted purple 10px;
+
+}
+
+
+
+.deck-sec{
+
+    /* Only need to set the location for deck-sec and trending would auto move to the next available location. */
+    grid-row:1/3;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+/* .deck-sec:first-child{
+    grid-area: title;
+} */
+
+.deck-content{
+    
+    display: grid;
+
+   
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3fr);
+}
+
+/* used to create our items(decks) style */
+.deck{
+    border: dashed orangered 5px;
+}
+
 
 
 
