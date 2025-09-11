@@ -138,12 +138,14 @@ input[type='text'] {
     background-color: #e2e8f0;
     display: grid;
 
-    grid-template-columns: 1fr 400px 10px;
-    grid-template-rows: 1fr 1fr 20px;
+    /* grid-template-columns: 1fr 400px 10px;
+    grid-template-rows: 1fr 1fr 20px; */
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr 1fr;
 
     gap: 20px;
-    padding: 5px;
-    padding-left: 20px;
+    padding: 25px 25px 45px 15px;
+    
 }
 
 
@@ -196,9 +198,12 @@ input[type='text'] {
     padding: 5px;
    
    
+   
 
 
 }
+
+
 
 .deck, .announcements,.trending-content{
 
