@@ -135,20 +135,24 @@ input[type='text'] {
 
 /* FOR OUR MAIN CONTENT AREA */
 .main-content{
+    background-color: #e2e8f0;
     display: grid;
 
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 400px 10px;
+    grid-template-rows: 1fr 1fr 20px;
 
     gap: 20px;
     padding: 5px;
+    padding-left: 20px;
 }
 
 
 /* creating a outline for my content items */
 .deck-sec, .announcement-sec,.trending-sec{
 
-border: dotted purple 10px;
+    /* border: dotted purple 10px; */
+
+
 
 }
 
@@ -156,11 +160,18 @@ border: dotted purple 10px;
 
 .deck-sec{
 
-    /* Only need to set the location for deck-sec and trending would auto move to the next available location. */
     grid-row:1/3;
     display: grid;
-    grid-template-rows: 50px 1fr;
-    padding: 10px;
+    grid-template-rows: 30px 1fr;
+    padding: 5px;
+}
+.announcement-sec{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.trending-sec{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 /* .deck-sec:first-child{
@@ -171,7 +182,7 @@ border: dotted purple 10px;
     
     display: grid;
 
-    gap: 10px;
+    gap: 30px;
    
 
     grid-template-columns: 1fr 1fr;
@@ -180,7 +191,28 @@ border: dotted purple 10px;
 
 /* used to create our items(decks) style */
 .deck{
-    border: dashed orangered 5px;
+    border-left: solid gold 10px;
+    border-radius: 5px;
+    padding: 5px;
+   
+   
+
+
+}
+
+.deck, .announcements,.trending-content{
+
+
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Using this selector to change the title of every paragraph... Maybe an h1 or h3 would have been better. */
+section >p{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
