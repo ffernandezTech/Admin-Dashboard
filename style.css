@@ -6,6 +6,11 @@
     padding: 0px;
 }
 
+:root{
+    /* used in header and search bar column template */
+    --shared-column-width: 400px;
+}
+
 .body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -52,9 +57,8 @@ header{
     /* This is to make this element an item for its own children */
     display: grid;
 
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr var(--shared-column-width);
     grid-template-rows: 1fr 1fr;
-    justify-content: center;
 }
 
 .main-content{
@@ -110,12 +114,14 @@ ul li{
 
 
     display: grid;
-    grid-template-columns: 1fr 500px;
+    
+    grid-template-columns: 1fr var(--shared-column-width);
    
 }
 
+
 input[type='text'] {
-    width: 400px;
+    width: 800px;
     height: 30px;
     margin: 20px 0px 0px 40px;
     border-radius: 10in;
@@ -150,13 +156,13 @@ input[type='text'] {
 
 
 /* creating a outline for my content items */
-.deck-sec, .announcement-sec,.trending-sec{
+/* .deck-sec, .announcement-sec,.trending-sec{
 
-    /* border: dotted purple 10px; */
+    border: dotted purple 10px;
 
 
 
-}
+} */
 
 
 
