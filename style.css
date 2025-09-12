@@ -117,7 +117,7 @@ ul li{
 
     display: grid;
     
-    grid-template-columns: 1fr var(--shared-column-width);
+    grid-template-columns: 1fr minmax( var(--shared-column-width), 1fr);
    
 }
 .search-bar-row:nth-child(1){
@@ -131,6 +131,7 @@ ul li{
 input[type='text'] {
 
     all: unset;
+    /* This width causing issues when window becomes smaller. But still cant figure out how to use min max correctly. It doesnt change no matter size of window. */
     width: 800px;
     height: 30px;
 
@@ -217,6 +218,7 @@ button{
 .announcement-sec{
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-top: 5px;;
 }
 .trending-sec{
     grid-column: 2/3;
