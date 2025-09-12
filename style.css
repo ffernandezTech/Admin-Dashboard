@@ -8,7 +8,7 @@
 
 :root{
     /* used in header and search bar column template */
-    --shared-column-width: 400px;
+    --shared-column-width: 600px;
 }
 
 .body{
@@ -17,13 +17,13 @@
  
 }
 
-.main-container > * {
+/* .main-container > * {
     border: solid 5px red;
 
 }
 header>*{
     border: solid 2px red;
-}
+} */
 
 
 /* The main grid for our website */
@@ -33,8 +33,8 @@ header>*{
 
     display: grid;
 
-    grid-template-columns: 300px 2fr;
-    grid-template-rows: 200px 2fr;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 200px 1fr;
 }
 
 /* Next three parts are for placing our sections in the area they need to go.
@@ -54,11 +54,13 @@ header{
     grid-row: 1/2;
 
 
+    background-color: #ffffff;
     /* This is to make this element an item for its own children */
     display: grid;
 
     grid-template-columns: 1fr var(--shared-column-width);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding: 20px;;
 }
 
 .main-content{
@@ -118,13 +120,26 @@ ul li{
     grid-template-columns: 1fr var(--shared-column-width);
    
 }
+.search-bar-row:nth-child(1){
+    justify-items: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
 
 
 input[type='text'] {
+
+    all: unset;
     width: 800px;
     height: 30px;
+
+    font-size: 1.5rem;
+    font-weight: normal;
     margin: 20px 0px 0px 40px;
     border-radius: 10in;
+    background-color: #e2e8f0;
+    padding: 10px;
 }
 
 
@@ -137,6 +152,32 @@ input[type='text'] {
 
      font-size: 1.5rem;
      font-weight: bold;
+}
+.btn-sec{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+
+button{
+
+    all: unset;
+    text-align: center;
+    background-color: #1992d4;
+    color: white;
+    font-size: 1.3rem;
+    outline: none;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    border-radius: 10in;
+
+   
+
+    
+
 }
 
 /* FOR OUR MAIN CONTENT AREA */
