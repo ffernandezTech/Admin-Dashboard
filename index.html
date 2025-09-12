@@ -60,6 +60,8 @@
              <div class="deck-content">
                  <div class="deck">
                     <!-- Padding wasn't working on deck class so added div inside decks classes to apply padding to it -->
+                     <!-- Figured out the issue. I kept changing the padding in .deck class, but there was a selector lower down setting the padding to something else
+                      and that one would take effect because it was lower down. -->
                     <div>
                         <h2>Blue Eyes White Dragon Deck </h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit.</p>

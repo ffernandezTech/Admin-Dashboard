@@ -195,7 +195,7 @@ input[type='text'] {
 .deck{
     border-left: solid gold 10px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
    
    
    
@@ -204,15 +204,18 @@ input[type='text'] {
 }
 
 
-
-.deck, .announcements,.trending-content{
+.deck, .announcements-content,.trending-content{
 
 
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 5px;
+    /* padding: 5px; */
 }
+
+
+
+
 
 /* Using this selector to change the title of every paragraph... Maybe an h1 or h3 would have been better. */
 section >p{
