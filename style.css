@@ -249,6 +249,10 @@ button:active{
     border-left: solid gold 10px;
     border-radius: 5px;
     padding: 20px;
+
+    display: grid;
+
+    position: relative;
    
    
    
@@ -333,6 +337,14 @@ h3 + p{
     font-size: 1.2rem;
 }
 
+.icons-group{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+
+    position: absolute;
+    top: 200px;
+    right: 30px;
+}
 
 
 
