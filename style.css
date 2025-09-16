@@ -181,6 +181,10 @@ button{
 
 }
 
+button:active{
+    background-color: red;
+}
+
 /* FOR OUR MAIN CONTENT AREA */
 .main-content{
     background-color: #e2e8f0;
@@ -267,7 +271,6 @@ button{
 
 .announcements{
 
-    border-bottom: solid black 1px;
 
     margin-top: 10px;
 }
@@ -290,6 +293,20 @@ button{
 section >p{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+
+/* These are for the announcement section and changing its style */
+
+/* couldnt find a way to select the first and second divs in this section. So just created an class for the both to work with. */
+.line-break{
+
+    border-bottom: solid grey 2px;
+
+}
+
+h3 + p{
+    font-size: 1.2rem;
 }
 
 
