@@ -289,6 +289,15 @@ button:active{
 
 }
 
+.trending-content p+p{
+
+    color: grey;
+}
+
+.trending-content p:first-of-type{
+    font-weight: bold;
+}
+
 
 
 .deck, .announcements-content,.trending-content{
