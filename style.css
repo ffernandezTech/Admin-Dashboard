@@ -252,11 +252,9 @@ button:active{
 
     display: grid;
 
-    position: relative;
-   
-   
-   
+    grid-auto-flow: row;
 
+    grid-template-rows: 1fr 50px;
 
 }
 .announcement-sec{
@@ -340,11 +338,14 @@ h3 + p{
 .icons-group{
     display: grid;
     grid-template-columns: repeat(3, 50px);
-
-    position: absolute;
+    
+    /* position: absolute;
     top: 200px;
-    right: 30px;
+    right: 30px; */
+
+    justify-content: end;
 }
+
 
 
 
